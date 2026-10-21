@@ -1,0 +1,212 @@
+/* OTHMAN — footer restyled to match the site's original identity more closely. */
+.site-footer--premium {
+  --footer-ink: #102e49;
+  --footer-ink-deep: #0d2840;
+  --footer-accent: #6ea8d3;
+  --footer-text: #ffffff;
+  --footer-muted: #d8e3eb;
+  --footer-stroke: rgba(255,255,255,.12);
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(180deg, var(--footer-ink-deep) 0%, var(--footer-ink) 100%);
+  color: var(--footer-text);
+  padding: 0;
+  isolation: isolate;
+}
+.site-footer--premium::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 88% 76%, rgba(255,255,255,.055) 0%, rgba(255,255,255,.055) 20%, transparent 21%),
+              radial-gradient(circle at 88% 76%, rgba(255,255,255,.04) 0%, rgba(255,255,255,.04) 35%, transparent 36%);
+  pointer-events: none;
+  z-index: -1;
+}
+.site-footer--premium::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(115deg, rgba(255,255,255,.035) 0%, transparent 38%, rgba(255,255,255,.02) 64%, transparent 100%);
+  pointer-events: none;
+  z-index: -1;
+}
+.site-footer--premium .footer-top-accent {
+  height: 4px;
+  background: #45677e;
+}
+.site-footer--premium .footer-premium-wrap {position: relative;}
+.site-footer--premium .footer-grid {
+  display: grid;
+  grid-template-columns: minmax(0,1.55fr) minmax(0,1.16fr) minmax(0,.84fr) minmax(0,.94fr) minmax(0,1.04fr);
+  column-gap: clamp(19px,2.45vw,39px);
+  row-gap: 40px;
+  padding: 58px 0 62px;
+}
+.site-footer--premium .footer-company {min-width: 0;}
+.site-footer--premium .footer-identity {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  color: #fff;
+  margin-bottom: 24px;
+}
+.site-footer--premium .footer-identity:hover {color: #fff;}
+.site-footer--premium .footer-identity .brand-mark {
+  width: 66px;
+  height: 51px;
+  flex-shrink: 0;
+  stroke: currentColor;
+  fill: none;
+  stroke-width: 1.7;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.site-footer--premium .footer-identity .brand-copy strong {
+  display: block;
+  font-size: 27px;
+  line-height: 1;
+  font-weight: 800;
+  letter-spacing: .035em;
+  color: #fff;
+}
+.site-footer--premium .footer-identity .brand-copy small {
+  display: block;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: .22em;
+  margin-top: 7px;
+  color: #d6e3ec;
+}
+.site-footer--premium .footer-company>p {
+  font-size: 15px;
+  color: var(--footer-muted);
+  line-height: 1.9;
+  max-width: 280px;
+}
+.site-footer--premium .footer-brand-label {
+  display: inline-flex;
+  margin-top: 23px;
+  padding: 8px 12px;
+  border: 1px solid rgba(255,255,255,.18);
+  font-size: 10px;
+  letter-spacing: .08em;
+  color: #edf4f8;
+}
+.site-footer--premium .footer-column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 11px;
+  min-width: 0;
+}
+.site-footer--premium .footer-column h3 {
+  font-size: 15px;
+  line-height: 1.35;
+  font-weight: 700;
+  letter-spacing: -.018em;
+  margin: 2px 0 18px;
+  color: #fff;
+}
+.site-footer--premium .footer-column a {
+  font-size: 13px;
+  color: var(--footer-muted);
+  line-height: 1.7;
+  transition: color .2s ease;
+  overflow-wrap: anywhere;
+}
+.site-footer--premium .footer-column a:hover,
+.site-footer--premium .footer-column a:focus-visible {
+  color: #ffffff;
+}
+.site-footer--premium .footer-column .footer-text-link {
+  font-weight: 700;
+  color: #ffffff;
+}
+.site-footer--premium .footer-column .footer-muted {
+  font-size: 13px;
+  line-height: 1.6;
+  color: var(--footer-muted);
+}
+.site-footer--premium .footer-service-area p {
+  font-size: 13px;
+  line-height: 1.95;
+  color: var(--footer-muted);
+}
+.site-footer--premium .footer-service-area strong {
+  font-weight: 700;
+  color: #ffffff;
+}
+.site-footer--premium .footer-column .footer-area-link {
+  color: #ffffff;
+  font-weight: 700;
+  margin-top: 7px;
+}
+.site-footer--premium .footer-bottom-premium {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  border-top: 1px solid var(--footer-stroke);
+  padding: 22px 0 28px;
+  font-size: 12px;
+  color: #c6d5df;
+}
+.site-footer--premium .footer-bottom-motto {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  text-align: right;
+}
+.site-footer--premium .footer-motto-rule {
+  height: 2px;
+  width: 30px;
+  background: var(--footer-accent);
+  flex-shrink: 0;
+}
+@media (max-width: 1100px) {
+  .site-footer--premium .footer-grid {grid-template-columns: minmax(0, 1.4fr) repeat(2,minmax(0,1fr)); gap: 43px 34px;}
+  .site-footer--premium .footer-company {grid-row: span 2;}
+}
+@media (max-width: 760px) {
+  .site-footer--premium .footer-grid {grid-template-columns: repeat(2,minmax(0,1fr)); gap: 38px 24px; padding: 43px 0 46px;}
+  .site-footer--premium .footer-company {grid-column: 1 / -1; grid-row: auto; border-bottom: 1px solid var(--footer-stroke); padding-bottom: 33px;}
+  .site-footer--premium .footer-company>p {max-width: 440px;}
+  .site-footer--premium .footer-bottom-premium {align-items: flex-start; flex-direction: column; gap: 10px;}
+}
+@media (max-width: 480px) {
+  .site-footer--premium .footer-grid {grid-template-columns: 1fr 1fr; column-gap: 14px; row-gap: 33px;}
+  .site-footer--premium .footer-contact-column {grid-column: 1 / -1;}
+  .site-footer--premium .footer-service-area {grid-column: 1 / -1; border-top: 1px solid var(--footer-stroke); padding-top: 22px;}
+  .site-footer--premium .footer-column h3 {font-size: 14px; margin-bottom: 12px;}
+  .site-footer--premium .footer-column a,
+  .site-footer--premium .footer-column .footer-muted,
+  .site-footer--premium .footer-service-area p {font-size: 13px;}
+  .site-footer--premium .footer-bottom-premium {font-size: 11px; padding: 21px 0 26px;}
+  .site-footer--premium .footer-identity .brand-mark {width: 58px; height: 46px;}
+  .site-footer--premium .footer-identity .brand-copy strong {font-size: 24px;}
+  .site-footer--premium .footer-identity .brand-copy small {font-size: 8px;}
+}
+@media(prefers-reduced-motion:reduce) {
+  .site-footer--premium .footer-column a {transition: none;}
+}
+
+.site-footer--premium .footer-logo-img{display:block;width:180px;max-width:100%;height:auto;}
+@media (max-width: 480px){.site-footer--premium .footer-logo-img{width:145px;}}
+
+/* Compact version of the supplied stacked logo, confined to footer column. */
+.site-footer--premium .footer-identity{display:inline-flex;align-items:center;max-width:100%;line-height:0;}
+.site-footer--premium .footer-logo-img{display:block!important;width:125px!important;max-width:100%!important;height:auto!important;max-height:130px!important;object-fit:contain!important;object-position:left center;}
+@media(max-width:480px){.site-footer--premium .footer-logo-img{width:115px!important;max-height:120px!important;}}
+
+/* Correct WhatsApp brand icon; keep the floating button position and link. */
+.whatsapp-float .whatsapp-brand-mark {
+  display: block;
+  width: 29px;
+  height: 29px;
+  flex-shrink: 0;
+  fill: currentColor;
+  stroke: none;
+}
+@media (max-width:600px) {
+  .whatsapp-float .whatsapp-brand-mark {width:28px;height:28px;}
+}

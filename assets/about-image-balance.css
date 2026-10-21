@@ -1,0 +1,45 @@
+/* Über uns: image proportions harmonized with the accompanying copy. */
+@media (min-width: 901px) {
+  .about-intro {
+    grid-template-columns: minmax(0, 0.88fr) minmax(0, 1.12fr);
+    gap: clamp(38px, 5vw, 76px);
+  }
+  .about-intro > img {
+    display: block;
+    width: 100%;
+    max-width: 435px;
+    height: 362px;
+    aspect-ratio: auto;
+    object-fit: cover;
+    object-position: center 54%;
+    justify-self: center;
+    border-radius: 10px;
+  }
+}
+@media (min-width: 601px) and (max-width: 900px) {
+  .about-intro {
+    grid-template-columns: minmax(0, 0.88fr) minmax(0, 1.12fr);
+    gap: 30px;
+  }
+  .about-intro > img {
+    display: block;
+    width: 100%;
+    max-height: 340px;
+    aspect-ratio: 5 / 4;
+    object-fit: cover;
+    object-position: center 54%;
+    border-radius: 10px;
+  }
+}
+@media (max-width: 600px) {
+  .about-intro > img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 285px;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    object-position: center 53%;
+    border-radius: 9px;
+  }
+}

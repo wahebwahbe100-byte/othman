@@ -1,0 +1,66 @@
+/* OTHMAN – Handwerk, das passt: Bild verkleinern, Layout ausbalancieren.
+   Other site sections and transitions remain unchanged. */
+.split-feature{
+  width:min(1100px,calc(100% - 96px));
+  max-width:1100px;
+  min-height:0;
+  margin:0 auto;
+  padding:68px 0 74px;
+  display:grid;
+  grid-template-columns:minmax(0,440px) minmax(0,1fr);
+  align-items:center;
+  gap:clamp(46px,6vw,86px);
+  overflow:clip;
+}
+.split-feature>.feature-photo{
+  display:block;
+  width:100%;
+  height:320px;
+  min-height:0;
+  max-height:320px;
+  aspect-ratio:auto;
+  object-fit:cover;
+  object-position:49% center;
+  border-radius:2px;
+}
+.split-feature>.feature-copy{
+  width:100%;
+  max-width:540px;
+  padding:0;
+  align-self:center;
+}
+.split-feature .feature-copy h2{max-width:100%;line-height:1.15}
+.split-feature .feature-copy>p{max-width:490px;line-height:1.75}
+@media(max-width:900px){
+  .split-feature{
+    width:calc(100% - 64px);
+    padding:56px 0 62px;
+    grid-template-columns:minmax(0,42%) minmax(0,1fr);
+    gap:34px;
+  }
+  .split-feature>.feature-photo{height:290px;min-height:0;max-height:290px}
+  .split-feature>.feature-copy{padding:0}
+  .split-feature .feature-copy h2{font-size:34px}
+}
+@media(max-width:680px){
+  .split-feature{
+    width:calc(100% - 36px);
+    padding:46px 0 57px;
+    display:flex;
+    flex-direction:column;
+    align-items:stretch;
+    gap:28px;
+  }
+  .split-feature>.feature-photo{
+    width:100%;
+    height:clamp(185px,56vw,240px);
+    max-height:240px;
+    min-height:0;
+    object-position:center 51%;
+  }
+  .split-feature>.feature-copy{width:100%;max-width:none;padding:0}
+  .split-feature .feature-copy h2{font-size:clamp(30px,8vw,34px)}
+  .split-feature .feature-copy>p{font-size:15px;margin-top:16px;line-height:1.7}
+  .split-feature .check-list{margin:18px 0 24px;gap:10px}
+}
+@media(max-width:360px){.split-feature{width:calc(100% - 30px)}.split-feature>.feature-photo{height:185px}}

@@ -1,0 +1,132 @@
+/* Leistungen, Über uns and Kontakt use the Projekte hero composition.
+   The original photos are displayed without changing their proportions. */
+.subpage-intro {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  padding: 34px 0 66px;
+  background: #f3f3f1;
+  color: #102e49;
+}
+
+.subpage-intro .intro-background-image {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  object-fit: cover;
+  object-position: 70% 49%;
+  pointer-events: none;
+}
+
+.subpage-intro::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background: linear-gradient(90deg,
+    rgba(249,249,248,.96) 0%,
+    rgba(249,249,248,.91) 32%,
+    rgba(249,249,248,.64) 56%,
+    rgba(249,249,248,.05) 100%);
+  pointer-events: none;
+}
+
+.subpage-intro > .container {
+  position: relative;
+  z-index: 1;
+}
+
+.subpage-intro .breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 35px;
+  color: #85888e;
+  font-size: 11px;
+}
+
+.subpage-intro .breadcrumb a:hover { color: #285d7a; }
+
+.subpage-intro .intro-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 18px;
+  max-width: 700px;
+}
+
+.subpage-intro .eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 17px;
+  color: #566978;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2.1px;
+  text-transform: uppercase;
+}
+
+.subpage-intro .eyebrow::before {
+  content: "";
+  flex: 0 0 32px;
+  width: 32px;
+  height: 3px;
+  background: #285d7a;
+}
+
+.subpage-intro h1 {
+  max-width: 720px;
+  font-size: clamp(38px,4.8vw,63px);
+  font-weight: 800;
+  line-height: 1.07;
+  letter-spacing: -.045em;
+  color: #102e49;
+}
+
+.subpage-intro h1 em { font-style: normal; color: #285d7a; }
+
+.subpage-intro .intro-inner > p {
+  max-width: 560px;
+  color: #42454b;
+  font-size: 16px;
+}
+
+@media (max-width: 760px) {
+  .subpage-intro { padding: 25px 0 42px; }
+  .subpage-intro .breadcrumb { font-size: 10px; margin-bottom: 26px; gap: 8px; }
+  .subpage-intro .eyebrow { font-size: 10px; }
+  .subpage-intro h1 { font-size: 42px; }
+  .subpage-intro .intro-inner > p { font-size: 14px; }
+  .subpage-intro .intro-background-image { object-position: 67% center; }
+  .subpage-intro::before {
+    background: linear-gradient(90deg,
+      rgba(249,249,248,.95),
+      rgba(249,249,248,.80) 60%,
+      rgba(249,249,248,.3));
+  }
+}
+
+@media (max-width: 360px) {
+  .subpage-intro h1 { font-size: clamp(30px,10.6vw,37px); }
+}
+
+/* Keep the longer original headings compact on narrow phones. */
+@media (max-width: 440px) {
+  .subpage-intro--leistungen h1,
+  .subpage-intro--kontakt h1 { font-size: clamp(29px,9.1vw,40px); }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .subpage-intro .eyebrow { animation: othman-subpage-enter .8s both; }
+  .subpage-intro h1 { animation: othman-subpage-enter .9s .15s both; }
+  .subpage-intro .intro-inner > p { animation: othman-subpage-enter .9s .3s both; }
+  @keyframes othman-subpage-enter {
+    from { opacity: 0; transform: translateY(18px); }
+    to { opacity: 1; transform: none; }
+  }
+}

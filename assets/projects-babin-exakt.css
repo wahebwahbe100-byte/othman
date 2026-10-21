@@ -1,0 +1,181 @@
+/* Layout copied from the actual BABIN BAU Projekte page, scoped to OTHMAN Projekte.
+   OTHMAN original hero photo, colors, and listing image URLs remain OTHMAN-specific. */
+body.babin-project-page{--red:#285d7a;--off:#f5f5f3;--ink:#102e49;background:#fff}
+body.babin-project-page .page-intro--projekte .eyebrow{display:flex;align-items:center;gap:12px;letter-spacing:2.1px;text-transform:uppercase;font-size:11px;font-weight:700;color:#566978;margin-bottom:17px}
+body.babin-project-page .page-intro--projekte .eyebrow::before{content:"";width:32px;height:3px;background:var(--red)}
+body.babin-project-page .projects-page{padding:88px 0;background:#fff}
+body.babin-project-page .projects-grid {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px}
+body.babin-project-page .project-card {background:none;color:var(--ink);text-align:left;padding:0;display:block;width:100%}
+body.babin-project-page .project-image {aspect-ratio:1.38;overflow:hidden;position:relative;background:#ddd}
+body.babin-project-page .project-image img {width:100%;height:100%;object-fit:cover;transition:transform .5s}
+body.babin-project-page .project-card:hover img {transform:scale(1.04)}
+body.babin-project-page .project-plus {position:absolute;bottom:13px;right:13px;display:flex;width:35px;height:35px;align-items:center;justify-content:center;background:white;color:var(--ink)}
+body.babin-project-page .project-plus svg {width:17px;height:17px}
+body.babin-project-page .project-meta {display:flex;gap:15px;align-items:start;justify-content:space-between;padding:19px 0 5px}
+body.babin-project-page .project-meta h3 {font-size:18px;margin-bottom:5px}
+body.babin-project-page .project-meta p {font-size:12px}
+body.babin-project-page .project-number {font-size:12px;color:#8c8f94;line-height:1.6}
+body.babin-project-page .cta-section {background:var(--red);color:white;padding:56px 0}
+body.babin-project-page .breadcrumb {display:flex;flex-wrap:wrap;gap:10px;font-size:11px;color:#85888e;margin-bottom:35px}
+body.babin-project-page .breadcrumb a:hover {color:var(--red)}
+body.babin-project-page .page-intro {padding:34px 0 66px;background:var(--off)}
+body.babin-project-page .page-intro .intro-inner {display:grid;grid-template-columns:1.15fr 1fr;gap:70px;align-items:end}
+body.babin-project-page .page-intro h1 {font-size:clamp(38px,4.8vw,63px);line-height:1.07;font-weight:800;max-width:720px}
+body.babin-project-page .page-intro h1 em {font-style:normal;color:var(--red)}
+body.babin-project-page .page-intro p {max-width:470px;font-size:16px}
+body.babin-project-page .page-intro .eyebrow {margin-bottom:17px}
+body.babin-project-page .filter-row {display:flex;gap:10px;flex-wrap:wrap;margin-bottom:34px}
+body.babin-project-page .filter-btn {padding:10px 19px;background:#f4f4f5;color:#62666e;font-size:12px;font-weight:700;border:1px solid #eee;border-radius:3px}
+body.babin-project-page .filter-btn:hover {border-color:var(--red);color:var(--red)}
+body.babin-project-page .filter-btn[aria-pressed=true] {background:var(--red);border-color:var(--red);color:#fff}
+body.babin-project-page .projects-page .projects-grid {gap:38px 28px}
+body.babin-project-page .gallery-status {margin-bottom:18px;font-size:12px}
+body.babin-project-page .gallery-dialog {border:0;padding:0;width:min(960px,calc(100vw - 40px));max-height:90vh;overflow:auto;box-shadow:0 25px 100px #0006;background:#fff;color:var(--ink)}
+body.babin-project-page .gallery-dialog::backdrop {background:#101115d9;backdrop-filter:blur(5px)}
+body.babin-project-page .dialog-image {width:100%;height:48vh;object-fit:cover}
+body.babin-project-page .dialog-copy {padding:30px 38px 35px}
+body.babin-project-page .dialog-copy h2 {font-size:30px;margin:0 0 14px;letter-spacing:-.7px}
+body.babin-project-page .dialog-copy p {font-size:15px}
+body.babin-project-page .dialog-actions {display:flex;gap:14px;margin-top:25px;flex-wrap:wrap}
+body.babin-project-page .dialog-close {position:absolute;top:13px;right:13px;background:white;width:39px;height:39px;display:grid;place-items:center}
+@media (max-width:1000px){
+body.babin-project-page .page-intro .intro-inner {gap:35px}
+}
+@media (max-width:760px){
+body.babin-project-page .projects-grid {grid-template-columns:1fr;gap:28px}
+body.babin-project-page .project-image {aspect-ratio:1.5}
+body.babin-project-page .project-meta h3 {font-size:20px}
+body.babin-project-page .project-meta p {font-size:13px}
+body.babin-project-page .cta-section {padding:42px 0}
+body.babin-project-page .breadcrumb {font-size:10px;margin-bottom:26px;gap:8px}
+body.babin-project-page .page-intro {padding:25px 0 42px}
+body.babin-project-page .page-intro .intro-inner {grid-template-columns:1fr;gap:24px}
+body.babin-project-page .page-intro h1 {font-size:42px;letter-spacing:-1.3px}
+body.babin-project-page .page-intro p {font-size:14px}
+body.babin-project-page .page-intro .eyebrow {font-size:10px;margin-bottom:17px}
+body.babin-project-page .filter-row {gap:8px;margin-bottom:26px}
+body.babin-project-page .filter-btn {font-size:11px;padding:9px 13px}
+body.babin-project-page .gallery-dialog {width:calc(100vw - 24px)}
+body.babin-project-page .dialog-image {height:33vh}
+body.babin-project-page .dialog-copy {padding:24px}
+body.babin-project-page .dialog-copy h2 {font-size:26px}
+body.babin-project-page .dialog-copy p {font-size:13px}
+}
+@media (max-width:360px){
+body.babin-project-page .page-intro h1 {font-size:37px}
+}
+body.babin-project-page .project-image img, body.babin-project-page .card-photo img, body.babin-project-page .story-image, body.babin-project-page .mini-image {object-fit:cover}
+body.babin-project-page .projects-page .projects-grid {row-gap:30px}
+@media (max-width:760px){
+body.babin-project-page .projects-page .filter-row {display:flex;flex-wrap:wrap;gap:8px}
+body.babin-project-page .projects-page .filter-btn {max-width:100%}
+body.babin-project-page .projects-page .projects-grid {row-gap:20px}
+}
+body.babin-project-page .page-intro--projekte {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  background: #efeeeb;
+}
+body.babin-project-page .page-intro--projekte .intro-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 18px;
+  max-width: 700px;
+}
+body.babin-project-page .page-intro--projekte .intro-inner > p {
+  max-width: 560px;
+  color: #42454b;
+}
+body.babin-project-page .page-intro--projekte .intro-background-image {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  object-fit: cover;
+  object-position: center center;
+  z-index: -1;
+  pointer-events: none;
+}
+body.babin-project-page .page-intro--projekte > .container { position: relative; z-index: 1; }
+@media (max-width: 760px){
+body.babin-project-page .page-intro--projekte .intro-background-image { object-position: 67% center; }
+body.babin-project-page .page-intro--projekte::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    background: linear-gradient(90deg,rgba(248,248,247,.78) 0%,rgba(248,248,247,.46) 52%,rgba(248,248,247,.08) 100%);
+    pointer-events: none;
+  }
+}
+/* Keep OTHMAN header and image, but use BABIN's projects composition. */
+body.babin-project-page .page-intro--projekte{background:#f3f3f1;}
+body.babin-project-page .page-intro--projekte::before{content:"";position:absolute;inset:0;z-index:0;background:linear-gradient(90deg,rgba(249,249,248,.96) 0%,rgba(249,249,248,.91) 32%,rgba(249,249,248,.64) 56%,rgba(249,249,248,.05) 100%);pointer-events:none}
+body.babin-project-page .page-intro--projekte .intro-background-image{object-position:70% 49%;}
+body.babin-project-page .page-intro--projekte .intro-inner h1{color:#102e49;letter-spacing:-.045em}
+body.babin-project-page .page-intro--projekte .intro-inner h1 em{color:#285d7a}
+body.babin-project-page .projects-page .container{width:min(1240px,calc(100% - 96px));margin-inline:auto}
+body.babin-project-page .projects-page .projects-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:38px 28px}
+body.babin-project-page .projects-page .project-card{display:block;appearance:none;border:0;border-radius:0;box-shadow:none;overflow:visible;min-width:0;max-width:100%;background:transparent;color:#102e49;text-align:left;padding:0;margin:0;transform:none;cursor:zoom-in;aspect-ratio:auto}
+body.babin-project-page .projects-page .project-card:hover{transform:none;box-shadow:none}
+body.babin-project-page .projects-page .project-card::after{display:none}
+body.babin-project-page .projects-page .project-image{position:relative;aspect-ratio:1.38;overflow:hidden;background:#e9e9e7}
+body.babin-project-page .projects-page .project-image img{display:block;width:100%;height:100%;object-fit:cover;transition:transform .85s cubic-bezier(.22,1,.36,1)}
+body.babin-project-page .projects-page .project-card:hover .project-image img{transform:scale(1.035)}
+body.babin-project-page .projects-page .project-meta{position:static;display:flex;justify-content:space-between;gap:15px;align-items:start;padding:19px 0 5px;color:#102e49;background:transparent;min-height:0}
+body.babin-project-page .projects-page .project-meta h3{font-size:18px;line-height:1.3;margin:0 0 5px;letter-spacing:-.025em}
+body.babin-project-page .projects-page .project-meta p{font-size:12px;line-height:1.5;color:#64707a}
+body.babin-project-page .projects-page .project-number{font-size:12px;line-height:1.6;font-weight:400;min-width:0;min-height:0;border:0;padding:0;color:#89939b}
+body.babin-project-page .projects-page .project-plus{position:absolute;bottom:13px;right:13px;width:35px;height:35px;border:0;border-radius:0;background:white;color:#102e49;display:flex;align-items:center;justify-content:center}
+body.babin-project-page .projects-page .project-plus .icon{width:17px;height:17px}
+body.babin-project-page .projects-page .filter-btn{padding:10px 19px;background:#f4f4f5;color:#62666e;font-size:12px;line-height:1.4;font-weight:700;border:1px solid #eee;border-radius:3px;box-shadow:none}
+body.babin-project-page .projects-page .filter-btn[aria-pressed="true"]{background:#285d7a;border-color:#285d7a;color:#fff}
+body.babin-project-page .projects-page .gallery-status{margin:0 0 18px;color:#64707a;font-size:12px}
+body.babin-project-page .projects-page .project-card[hidden]{display:none!important}
+body.babin-project-page .gallery-dialog{position:fixed;inset:0;margin:auto;border:0;border-radius:0;padding:0;width:min(960px,calc(100vw - 40px));height:auto;max-height:90vh;overflow:auto;box-shadow:0 25px 100px #0006;background:#fff;color:#102e49}
+body.babin-project-page .gallery-dialog[open]{display:block}
+body.babin-project-page .gallery-dialog::backdrop{background:#101115d9;backdrop-filter:blur(5px)}
+body.babin-project-page .gallery-dialog .dialog-image{display:block;width:100%;height:min(48vh,520px);object-fit:contain;background:#e9edf0}
+body.babin-project-page .gallery-dialog .dialog-copy{padding:30px 38px 35px}
+body.babin-project-page .gallery-dialog .dialog-copy h2{font-size:30px;margin:0 0 14px}
+body.babin-project-page .gallery-dialog .dialog-copy p{font-size:15px}
+body.babin-project-page .gallery-dialog .dialog-close{position:absolute;top:13px;right:13px;z-index:2;width:39px;height:39px;display:grid;place-items:center;background:white;color:#102e49;border:0;border-radius:0;transform:none}
+body.babin-project-page .gallery-dialog .dialog-actions{margin-top:20px}
+body.babin-project-page .cta-section{background:#102e49;color:white;padding:38px 0}
+body.babin-project-page .cta-section p{color:#d8e4ec}
+body.babin-project-page .cta-section .btn{background:white;color:#102e49;border-color:white}
+body.babin-project-page .ka-unavailable{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;padding:25px;text-align:center;background:#e7ecef;color:#102e49;font-size:14px;font-weight:700}
+body.babin-project-page .ka-unavailable[hidden]{display:none!important}
+body.babin-project-page .project-image.is-blocked img{opacity:0}
+/* Progressive enhancement: never hide content when JavaScript is unavailable. */
+@media (prefers-reduced-motion:no-preference){
+ body.babin-project-page .projects-page .project-card.scroll-reveal{opacity:0;transform:translateY(32px);transition:opacity 900ms cubic-bezier(.22,1,.36,1),transform 1000ms cubic-bezier(.22,1,.36,1);transition-delay:var(--reveal-delay,0ms)}
+ body.babin-project-page .projects-page .project-card.scroll-reveal.is-revealed{opacity:1;transform:none}
+ body.babin-project-page .page-intro .eyebrow{animation:othman-enter .8s both}
+ body.babin-project-page .page-intro h1{animation:othman-enter .9s .15s both}
+ body.babin-project-page .page-intro .intro-inner>p{animation:othman-enter .9s .3s both}
+ @keyframes othman-enter{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+}
+@media(max-width:1000px){body.babin-project-page .projects-page .projects-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:30px 20px}}
+@media(max-width:760px){
+ body.babin-project-page .projects-page{padding:58px 0}
+ body.babin-project-page .projects-page .container{width:calc(100% - 40px)}
+ body.babin-project-page .projects-page .projects-grid{grid-template-columns:1fr;gap:28px}
+ body.babin-project-page .projects-page .project-image{aspect-ratio:1.5}
+ body.babin-project-page .projects-page .project-meta h3{font-size:20px}
+ body.babin-project-page .projects-page .project-meta p{font-size:13px}
+ body.babin-project-page .page-intro--projekte::before{background:linear-gradient(90deg,rgba(249,249,248,.95),rgba(249,249,248,.80) 60%,rgba(249,249,248,.3))}
+ body.babin-project-page .page-intro--projekte .intro-background-image{object-position:67% center}
+ body.babin-project-page .gallery-dialog{width:calc(100vw - 24px)}
+ body.babin-project-page .gallery-dialog .dialog-image{height:33vh}
+ body.babin-project-page .gallery-dialog .dialog-copy{padding:24px}
+ body.babin-project-page .gallery-dialog .dialog-copy h2{font-size:26px}
+}
+
+@media(max-width:1200px){body.babin-project-page .projects-page .container{width:calc(100% - 64px)}}
+@media(max-width:760px){body.babin-project-page .projects-page .container{width:calc(100% - 40px)}}
+@media(max-width:360px){body.babin-project-page .projects-page .container{width:calc(100% - 30px)}}

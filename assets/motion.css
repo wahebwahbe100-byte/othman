@@ -1,0 +1,39 @@
+/* Scroll reveal / staggered entry – durations and timing from user-provided BABIN BAU. */
+@media(prefers-reduced-motion:no-preference){
+ html.othman-motion-ready .scroll-reveal{opacity:0;transform:translate3d(0,34px,0);transition-property:opacity,transform;transition-duration:1050ms,1100ms;transition-timing-function:cubic-bezier(.22,1,.36,1);transition-delay:var(--reveal-delay,0ms);backface-visibility:hidden}
+ html.othman-motion-ready .scroll-reveal.reveal-left{transform:translate3d(-32px,12px,0)}
+ html.othman-motion-ready .scroll-reveal.reveal-right{transform:translate3d(32px,12px,0)}
+ html.othman-motion-ready .scroll-reveal.is-revealed,html.othman-motion-ready .scroll-reveal.reveal-left.is-revealed,html.othman-motion-ready .scroll-reveal.reveal-right.is-revealed{opacity:1;transform:translate3d(0,0,0)}
+ html.othman-motion-ready .steps>.step.scroll-reveal{transition-duration:1400ms,1500ms}
+ html.othman-motion-ready .service-card.scroll-reveal.is-revealed:hover{transform:translate3d(0,-5px,0)}
+ html.othman-motion-ready .othman-gallery .project-card.scroll-reveal.is-revealed:hover{transform:none}
+ @keyframes othman-copy-arrive{from{opacity:0;transform:translate3d(0,20px,0)}to{opacity:1;transform:translate3d(0,0,0)}}
+ .hero-slide.is-active .hero-copy>.eyebrow,
+ .hero-slide.is-active .hero-copy>.hero-slide-title,
+ .hero-slide.is-active .hero-copy>p,
+ .hero-slide.is-active .hero-copy>.button-row,
+ .hero-slide.is-active .hero-copy>.location-pill{animation:othman-copy-arrive .55s cubic-bezier(.22,1,.36,1) both}
+ .hero-slide.is-active .hero-copy>.eyebrow{animation-duration:.42s;animation-delay:.02s}
+ .hero-slide.is-active .hero-copy>.hero-slide-title{animation-delay:.09s}
+ .hero-slide.is-active .hero-copy>p{animation-delay:.16s}
+ .hero-slide.is-active .hero-copy>.button-row{animation-delay:.24s}
+ .hero-slide.is-active .hero-copy>.location-pill{animation-delay:.29s}
+ .hero-slide{transition:opacity .9s cubic-bezier(.22,1,.36,1),visibility .9s ease}
+ .hero-slider .hero-slide .hero-photo{transform:scale(1.035);transition:transform 5.8s ease-out}
+ .hero-slider .hero-slide.is-active .hero-photo{transform:scale(1)}
+ .page-hero .eyebrow,.page-hero h1,.page-hero p,.page-hero .button-row,
+ .contact-heading .eyebrow,.contact-heading h1,.contact-heading p,
+ .error-page h1,.error-page p{animation:othman-copy-arrive .92s cubic-bezier(.22,1,.36,1) both}
+ .page-hero .eyebrow,.contact-heading .eyebrow{animation-delay:.07s}
+ .page-hero h1,.contact-heading h1,.error-page h1{animation-delay:.19s}
+ .page-hero p,.contact-heading p,.error-page p{animation-delay:.35s}
+ .hero-slider-arrow,.hero-dot span,.btn,.text-link,.desktop-nav a,.service-card,.service-image img,.othman-gallery .project-visual img{transition-timing-function:cubic-bezier(.22,1,.36,1)}
+}
+@media(prefers-reduced-motion:reduce){
+ html{scroll-behavior:auto!important}
+ .scroll-reveal,.scroll-reveal.is-revealed,.hero-slide .hero-copy>*,.page-hero .eyebrow,.page-hero h1,.page-hero p,.contact-heading .eyebrow,.contact-heading h1,.contact-heading p{opacity:1!important;transform:none!important;animation:none!important;transition:none!important}
+ .hero-slider .hero-slide .hero-photo{transform:none!important;transition:none!important}
+}
+@media print{.scroll-reveal{opacity:1!important;transform:none!important}}
+/* Prevent left/right reveals from widening viewport before their entrance completes. */
+main{overflow-x:clip}

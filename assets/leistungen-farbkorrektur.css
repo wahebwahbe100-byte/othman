@@ -1,0 +1,29 @@
+/* Color refinement for OTHMAN Leistungen.
+   Replaces the former brown / warm accents with steel blue, matched to
+   the site's dark navy identity. Deliberately changes colors only. */
+:root {
+  --leistungen-accent: #285f7d;
+  --leistungen-soft: #f1f6f9;
+}
+/* 'Ihr neuer Lieblingsplatz' and all subsequent service subtitles. */
+.babin-size-service-rows .service-detail .detail-kicker {
+  color: var(--leistungen-accent);
+}
+/* Keep accents and neighboring backgrounds within the same cool palette. */
+.service-jumps a:hover,
+.service-jumps a:focus-visible {
+  background: #eef4f7;
+}
+.babin-size-service-rows .detail-image {
+  background: #e9f0f4;
+}
+.section.warm {
+  background: var(--leistungen-soft);
+}
+.section.warm .faq-intro .eyebrow {
+  color: var(--leistungen-accent);
+}
+/* Remove the former amber keyboard focus ring on this page. */
+:focus-visible {
+  outline-color: #4781a1;
+}
