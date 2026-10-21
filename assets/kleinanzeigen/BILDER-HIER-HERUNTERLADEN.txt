@@ -1,0 +1,2 @@
+Der Bild-Downloader speichert hier 41 Originalfotos.
+Starten Sie im Hauptordner DOWNLOAD-KLEINANZEIGEN-BILDER.cmd.
