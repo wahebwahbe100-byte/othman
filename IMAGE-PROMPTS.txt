@@ -1,0 +1,14 @@
+Generated with the built-in image generation tool. Assets are in dist/assets/.
+
+HERO
+Use case: photorealistic-natural. Asset type: full-width website hero photograph, landscape 1536x1024. A beautiful contemporary German home kitchen, warm natural oak island with pale stone worktop, matte warm grey wall cabinets, black faucet, two subtle taupe stools on the right, tall window on the right facing a leafy garden, warm under-cabinet lighting, natural overcast daylight. Camera at eye level wide architectural editorial photography, absolutely realistic joinery and proportions, restrained sophisticated palette. Island occupies right two-thirds, left third quieter cupboards suited to an overlay. No people, no writing, no logos, no graphics, no fake vignette. A photo only, not a website screenshot.
+
+FURNITURE
+Use case: photorealistic-natural. Asset type: website services photo, landscape 1536x1024. Close authentic editorial photo of a furniture assembly professional's hands adjusting the hinge of a new natural light oak cabinet using a manual screwdriver. Show only forearms in navy workwear and the hands with anatomically correct fingers, no face. Tidy home interior, focus on hinge, cabinet shelves and precision, realistic quality craftsmanship. Warm natural side light, soft depth of field, restrained beige oak and dark navy palette. No text, no logos, no graphics. Photo only.
+
+PLANNING
+Use case: photorealistic-natural. Asset type: website service image, landscape 1536x1024. Photorealistic overhead three-quarter view of a kitchen floor plan on white paper on a natural oak tabletop with a compact black and yellow measuring tape extended partway, a pencil and small material swatches. Architectural lines on the paper but no readable text. Clean ordered composition for a German kitchen fitting business, warm neutral daylight, credible real objects and photographic texture, no humans, no logos, no website text, no graphics. No excessive accessories.
+
+DETAIL
+Use case: photorealistic-natural. Asset type: website kitchen craftsmanship photograph, landscape 1536x1024. Close perspective along a pale beige stone kitchen countertop, beautifully aligned warm natural oak lower cabinets, discreet black induction hob at right and a matte black curved kitchen faucet farther left, warm under-cabinet light and oak upper cabinet, small plant, real German contemporary home. Focus on precision-fitted countertop edges and oak grain, warm daylight, tactile real materials and realistic joinery, elegant editorial interior photography. No text, no logos, no graphics, no people. Photo only.
+

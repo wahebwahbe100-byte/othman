@@ -1,0 +1,1 @@
+Die Bilder sind im HTML auf lokale Pfade umgestellt. Bitte zuerst DOWNLOAD-KLEINANZEIGEN-BILDER.cmd unter Windows im Website-Hauptordner ausfuehren und alle 41 Fotos herunterladen. Links zu Kleinanzeigen stehen ausschliesslich in der Download-Liste bzw. im Downloader, nicht im HTML, CSS oder JavaScript.
